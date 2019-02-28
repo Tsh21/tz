@@ -2,10 +2,10 @@ package com.igeek;
 
 /**
  * @author zx
- * @date 2019Äê2ÔÂ27ÈÕ
+ * @date 2019å¹´2æœˆ27æ—¥
  * @version 1.0
- * @description£º³£Á¿ final
-  * ¿ì½İ¼üCtrl+shift+X;Ctrl+shift+Y
+ * @descriptionå¸¸é‡ final
+  * å¿«æ·é”®Ctrl+shift+X;Ctrl+shift+Y
  */
 public class TestConstant {
 
