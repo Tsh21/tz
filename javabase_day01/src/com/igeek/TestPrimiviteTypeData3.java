@@ -3,16 +3,16 @@ package com.igeek;
 /**
  * 
  * @author zx
- * @date 2019Äê2ÔÂ27ÈÕ
+ * @date 2019å¹´2æœˆ27æ—¥
  * @version 1.0
- * @description£ºcharµÄÊ¹ÓÃ
+ * @descriptionï¼šcharçš„ä½¿ç”¨
  */
 public class TestPrimiviteTypeData3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char a = 'a';
-		char b = '¼Ò';
+		char b = 'å®¶';
 		char c = '\u0061';
 		char d = 'b';
 		System.out.println(a);
