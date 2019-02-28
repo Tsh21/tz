@@ -1,7 +1,7 @@
 package javabase_day02;
 
 /**
- * @author 祝祥
+ * @author zx
  * @date 2019年2月28日
  * @version 1.0
  * @description：字符串运算符 +

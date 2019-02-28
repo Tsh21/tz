@@ -3,7 +3,7 @@ package com.igeek;
 import java.math.BigDecimal;
 
 /**
- * @author 祝祥
+ * @author zx
  * @date 2019年2月27日
  * @version 1.0
  * @description：浮点型

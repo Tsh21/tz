@@ -3,7 +3,7 @@ package javabase_day02;
 import java.util.Scanner;
 
 /**
- * @author 祝祥
+ * @author zx
  * @date 2019年2月28日
  * @version 1.0
  * @description：2. 键盘录入三个数据，获取这三个数据中的最大值

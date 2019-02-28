@@ -3,7 +3,7 @@ package javabase_day02;
 import java.util.Scanner;
 
 /**
- * @author 祝祥
+ * @author zx
  * @date 2019年2月28日
  * @version 1.0
  * @description：键盘录入两个数据并求和

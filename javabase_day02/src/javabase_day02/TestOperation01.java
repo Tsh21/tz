@@ -2,7 +2,7 @@ package javabase_day02;
 
 /**
  * 
- * @author 祝祥
+ * @author zx
  * @date 2019年2月28日
  * @version 1.0
  * @description：2.1	算数运算符 + - * /  % 模(取余) ；一元运算符  ++； --
