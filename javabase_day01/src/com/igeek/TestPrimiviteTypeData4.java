@@ -6,9 +6,9 @@ public class TestPrimiviteTypeData4 {
 		// TODO Auto-generated method stub
 		boolean flag = true;
 		if(flag) {
-			System.out.println("ÕæµÄ");
+			System.out.println("çœŸçš„");
 		}else {
-			System.out.println("¼ÙµÄ");
+			System.out.println("å‡çš„");
 		}
 	}
 
