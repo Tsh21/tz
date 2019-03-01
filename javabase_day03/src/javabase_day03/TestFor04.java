@@ -7,7 +7,7 @@ package javabase_day03;
  * @description：嵌套循坏
  * 2.打印
  *    1	1 1 1 1
- *	  2	2 2 2 2
+ *    2	2 2 2 2
  *    3	3 3 3 3
  *    4	4 4 4 4
  *    5	5 5 5 5 
