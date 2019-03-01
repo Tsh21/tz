@@ -2,9 +2,9 @@ package javabase_day03;
 
 /**
  * @author zx
- * @date 2019Äê3ÔÂ1ÈÕ
+ * @date 2019å¹´3æœˆ1æ—¥
  * @version 1.0
- * @description£ºbreak
+ * @descriptionÂ£Âºbreak
  */
 public class TestBreak01 {
 
@@ -18,7 +18,7 @@ public class TestBreak01 {
 				break;
 			}
 		}
-		System.out.println("ÕÒµ½£¡");
+		System.out.println("æ‰¾åˆ°ï¼");
 	}
 
 }
