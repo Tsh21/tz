@@ -2,10 +2,10 @@ package javabase_day03;
 
 /**
  * @author zx
- * @date 2019Äê3ÔÂ1ÈÕ
+ * @date 2019å¹´3æœˆ1æ—¥
  * @version 1.0
- * @description£ºÇ¶Ì×Ñ­»µ
- * 2.´òÓ¡
+ * @descriptionï¼šåµŒå¥—å¾ªå
+ * 2.æ‰“å°
  *    1	1 1 1 1
  *	  2	2 2 2 2
  *    3	3 3 3 3
