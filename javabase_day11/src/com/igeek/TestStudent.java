@@ -35,10 +35,8 @@ public class TestStudent {
 			bw.newLine();
 			bw.flush();
 		}
-		
 		//释放资源
 		bw.close();
-
 	}
 	
 	//添加学生
