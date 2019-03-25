@@ -33,6 +33,7 @@ public class ArrayIndex {
 		} 
 		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("caught");
+			e.printStackTrace();
 		}
 		System.out.println("hello exception");
 		
