@@ -3,6 +3,17 @@ package com.igeek;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author zx
+ * @date 2019年3月28日
+ * @version 1.0
+ * @description:
+ *     补充：
+ *     String.matches(String regex);
+ *     告知此字符串是否匹配给定的 正则表达式。
+ * public boolean matches(String regex)；    
+ *       
+ */
 public class TestRegularExpression02 {
 
 	public static void main(String[] args) {

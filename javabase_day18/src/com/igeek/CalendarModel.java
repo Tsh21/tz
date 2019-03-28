@@ -50,7 +50,6 @@ public class CalendarModel {
 		}
 		
 		for(int i=1;i<=maxDate;i++) {
-			
 			//标记出几号
 			if(c.get(Calendar.DATE) == dayOfMonth) {
 				System.out.print("["+c.get(Calendar.DAY_OF_MONTH)+"]\t");
@@ -63,5 +62,6 @@ public class CalendarModel {
 			}
 			c.add(Calendar.DAY_OF_MONTH, 1);
 		}
+		
 	}
 }

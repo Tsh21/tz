@@ -6,6 +6,9 @@ import java.util.regex.Pattern;
 public class TestRegularExpression03 {
 
 	public static void main(String[] args) {
+		
+		//Pattern.compile(regex).matcher(this).replaceAll(replacement);
+		
 		Pattern p = Pattern.compile("[0-9]");
 
 		Matcher m = p.matcher("aa234**ssdaf34**shh9934");

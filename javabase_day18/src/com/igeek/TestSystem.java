@@ -21,6 +21,8 @@ public class TestSystem {
 		System.exit(0);
 		System.out.println("hello");
 		
+		System.currentTimeMillis();
+		
 	}
 
 }
