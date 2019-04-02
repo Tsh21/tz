@@ -1,8 +1,5 @@
 package com.igeek;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class CopyArrayList<E> {
 	
 	private Object[] elementData;
