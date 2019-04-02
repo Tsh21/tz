@@ -17,25 +17,20 @@ public class CopyArrayList<E> {
 
 	public CopyArrayList(int initialCapacity) {
 		super();
-		if(initialCapacity >0) {
-			elementData = new Object[initialCapacity];
-		}
-		else if(initialCapacity <=0) {
+		if(initialCapacity <0) {
 			throw new IllegalArgumentException("Illegal Capacity");
+		}
+		else if(initialCapacity ==0) {
+			elementData = new Object[DEFAULT_CAPACITY];
+		} else {
+			elementData = new Object[initialCapacity];
 		}
 	}
 	
 	//添加
 	public void add(E e) {
-//		elementData[size] = e;
-//		size = size +1;
-		
 		//什么时候扩容？
 		if(size == elementData.length) {
-			//扩容
-//			int oldCapacity = elementData.length;
-//	        int newCapacity = oldCapacity + (oldCapacity >> 1);
-//	        Object[] newArray = new Object[newCapacity];
 			Object[] newArray = new Object[elementData.length + (elementData.length >> 1)];
 	        //拷贝
 	        System.arraycopy(elementData, 0, newArray, 0, elementData.length);
@@ -44,6 +39,59 @@ public class CopyArrayList<E> {
 		elementData[size++] = e;
 	}
 	
+	//获取元素
+	public E get(int index) {
+		checkRange(index);
+		return (E)elementData[index];
+	}
+	
+	//设值
+	public void set(E element,int index) {
+		checkRange(index);
+		elementData[index] = element;
+	}
+	
+	//检查
+	public void checkRange(int index) {
+		//判断索引是否合法 [0,size-1]
+		if(index<0 || index >size-1) {
+			throw new RuntimeException("索引异常:"+index);
+		}
+	}
+	
+	//删除元素
+	public void remove(E element) {
+		
+		//element ,将它和集合中的所有元素依次挨个比较，获得第一个比较为true的话
+		for(int i = 0; i<size; i++) {
+			if(element.equals(get(i))) {
+				//将该元素删除
+				remove(i);
+			}
+		}
+	}
+	
+	//删除元素（index）
+	public void remove(int index) {
+		//a,b,c,d,e,f,g,h
+		//a,b,c,e,f,g,h,h
+		int numMoved = elementData.length - index - 1;
+		if(numMoved > 0) {
+			System.arraycopy(elementData, index+1, elementData, index, numMoved);
+		}
+		elementData[--size] = null; // clear to let GC do its work
+	}
+	
+	//返回元素个数
+	public int size() {
+		return size;
+	}
+	
+	//判断为空
+	public boolean isEmpty() {
+		return size == 0 ;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
@@ -59,18 +107,16 @@ public class CopyArrayList<E> {
 	}
 
 	public static void main(String[] args) {
-		CopyArrayList<String> arrayList = new CopyArrayList<String>();
-//		arrayList.add("hello");
-//		arrayList.add("java");
-//		arrayList.add(666);
-//		arrayList.add(888);
-		//Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+		CopyArrayList<Integer> arrayList = new CopyArrayList<Integer>();
 		for(int i=0;i<40;i++) {
-			arrayList.add(i+"");
+			arrayList.add(i+1);
 		}
-		
 		System.out.println(arrayList);
-		
+		System.out.println(arrayList.size());
+		arrayList.remove(3);
+		System.out.println(arrayList);
+		System.out.println(arrayList.size());
+		System.out.println(arrayList.isEmpty());
         
 	}
 	
