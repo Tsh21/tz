@@ -22,7 +22,6 @@ public class Test05 {
 	public static void main(String[] args) {
 		// 准备牌,记录一副牌的集合
 		ArrayList<String> pokers = new ArrayList<String>();
-
 		// 添加牌
 		addPokers(pokers);
 		// 洗牌
@@ -34,7 +33,7 @@ public class Test05 {
 	
 	// 发牌
 	public static void dealPokers(ArrayList<String> pokers) {
-		// 为三位玩家分别设计手牌
+		// 为四位玩家分别设计手牌
 		ArrayList<String> player1 = new ArrayList<>();
 		ArrayList<String> player2 = new ArrayList<>();
 		ArrayList<String> player3 = new ArrayList<>();
@@ -143,10 +142,6 @@ public class Test05 {
 				pokers.add(thisCard);
 			}
 		}
-
-		// 添加大小王
-//		pokers.add("大王");
-//		pokers.add("小王");
 
 	}
 
