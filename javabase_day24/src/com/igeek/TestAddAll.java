@@ -12,7 +12,6 @@ import java.util.Collections;
 	public static <T> boolean addAll(Collection<? super T> c,T... elements)
 	该方法使用到了可变参数，即定义时并不知道要传入多少个实际参数。此时定义成...的方式，此时可以在调用该方法时，一次传入多个参数。传入的多个数将被自动组织成数组，我们只要操作生成的数组即可。
 	注：可变参数只能放在最后定义。可变参数方法的参数本质是数组，所以不可以与数组类型参数重载。
-
  */
 public class TestAddAll {
 
